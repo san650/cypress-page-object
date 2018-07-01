@@ -6,5 +6,6 @@
   "screenshotsFolder": "test/screenshots",
   "supportFile": "test/support",
   "videosFolder": "test/videos",
-  "ignoreTestFiles": "!*_spec.js"
+  "ignoreTestFiles": "!*_spec.js",
+  "pluginsFile": "test/plugins/index.js"
 }
