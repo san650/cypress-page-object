@@ -1,0 +1,34 @@
+{
+  "name": "cypress-page-object",
+  "version": "1.0.0",
+  "description": "Page Object helpers for Cypress testing framework",
+  "main": "index.js",
+  "scripts": {
+    "start": "node test/dummy/start.js",
+    "test": "node test/run.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/san650/cypress-page-object.git"
+  },
+  "keywords": [
+    "page-object",
+    "cypress",
+    "test",
+    "acceptance",
+    "e2e",
+    "integration"
+  ],
+  "author": "Santiago Ferreira <san650@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/san650/cypress-page-object/issues"
+  },
+  "homepage": "https://github.com/san650/cypress-page-object#readme",
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "cypress": "^3.0.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0"
+  }
+}
