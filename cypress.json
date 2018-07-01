@@ -3,9 +3,9 @@
   "video": false,
   "fixturesFolder": false,
   "integrationFolder": "test",
-  "screenshotsFolder": "test/screenshots",
+  "screenshotsFolder": "tmp/screenshots",
   "supportFile": "test/support",
-  "videosFolder": "test/videos",
+  "videosFolder": "tmp/videos",
   "ignoreTestFiles": "!*_spec.js",
   "pluginsFile": "test/plugins/index.js"
 }
