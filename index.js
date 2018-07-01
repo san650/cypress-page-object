@@ -1,7 +1,7 @@
 /**
  * Generates a new page object
  */
-export function page(definition) {
+function page(definition) {
   return Object.assign(
     {
       get html() {
@@ -58,7 +58,7 @@ export function page(definition) {
  * @param {boolean} options.isHidden - True to force write hidden inputs
  * @return self
  */
-export function fillable(selector, options = {}) {
+function fillable(selector, options = {}) {
   return function(value){
     return this.scoped(() => {
       if (options.isHidden) {
@@ -86,7 +86,7 @@ export function fillable(selector, options = {}) {
  * @param {string} selector - CSS selector of the element to click
  * @return self
  */
-export function clickable(selector) {
+function clickable(selector) {
   return function() {
     return this.scoped(() => {
       cy.get(selector).click();
@@ -111,9 +111,16 @@ export function clickable(selector) {
  * @param {string} path - Full path of the page to load
  * @return self
  */
-export function visitable(path) {
+function visitable(path) {
   return function() {
     cy.visit(path);
     return this;
   };
 }
+
+module.exports = {
+  clickable,
+  fillable,
+  page,
+  visitable,
+};
