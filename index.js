@@ -20,15 +20,9 @@ function page(definition) {
       },
 
       scoped(cb) {
-        // We could use always this.html.within but this avoids the test to
-        // print `WITHIN` clause if there's no need.
-        if (definition.scope) {
-          this.html.within(() => {
-            cb();
-          });
-        } else {
+        this.html.within({ log: false }, () => {
           cb();
-        }
+        });
 
         return this;
       }
