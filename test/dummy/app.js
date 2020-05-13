@@ -16,17 +16,17 @@ app.set('view engine', '.html');
 app.set('views', path.join(__dirname, 'views'));
 
 app.get('/', function(req, res) {
-  res.render('index');
+  res.render('index', {layout: false});
 });
 
 app.get('/form', function(req, res) {
-  res.render('form');
+  res.render('form', {layout: false});
 });
 
 app.post('/form', function(req, res) {
   const { username, password, realm } = req.body;
 
-  res.render('posted', { username, password, realm });
+  res.render('posted', { username, password, realm }, {layout: false});
 });
 
 module.exports = app;
